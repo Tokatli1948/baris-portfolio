@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barış Kurt | Portföy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0f172a;
+      color: white;
+      line-height: 1.6;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      background: rgba(15, 23, 42, 0.9);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    nav h2 {
+      color: #38bdf8;
+      font-size: 28px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(135deg, #0f172a, #111827);
+    }
+
+    .hero-content h1 {
+      font-size: 60px;
+      margin-bottom: 15px;
+    }
+
+    .hero-content span {
+      color: #38bdf8;
+    }
+
+    .hero-content p {
+      font-size: 22px;
+      color: #cbd5e1;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 30px;
+      background: #38bdf8;
+      color: #0f172a;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px rgba(56,189,248,0.4);
+    }
+
+    section {
+      padding: 100px 10%;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 40px;
+      margin-bottom: 50px;
+      color: #38bdf8;
+    }
+
+    .about {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      color: #cbd5e1;
+      font-size: 18px;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .skill-card {
+      background: #1e293b;
+      padding: 25px;
+      border-radius: 20px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-10px);
+      background: #334155;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .project-card {
+      background: #1e293b;
+      border-radius: 20px;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .project-content {
+      padding: 25px;
+    }
+
+    .project-content h3 {
+      margin-bottom: 10px;
+      color: #38bdf8;
+    }
+
+    .contact-box {
+      max-width: 700px;
+      margin: auto;
+      background: #1e293b;
+      padding: 40px;
+      border-radius: 25px;
+    }
+
+    .contact-item {
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+
+    .contact-item strong {
+      color: #38bdf8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #020617;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .hero-content h1 {
+        font-size: 42px;
+      }
+
+      .hero-content p {
+        font-size: 18px;
+      }
+
+      section {
+        padding: 80px 6%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h2>Barış</h2>
+
+    <ul>
+      <li><a href="#about">Hakkımda</a></li>
+      <li><a href="#skills">Yetenekler</a></li>
+      <li><a href="#projects">Projeler</a></li>
+      <li><a href="#contact">İletişim</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Merhaba, Ben <span>Barış Kurt</span></h1>
+      <p>Frontend Developer & Web Tasarım Öğrencisi</p>
+
+      <a href="#contact" class="btn">Benimle İletişime Geç</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">Hakkımda</h2>
+
+    <div class="about">
+      <p>
+        Ben Barış Kurt. Tokat'ın Zile ilçesinde yaşıyorum.
+        Web tasarım ve yazılım öğreniyorum.
+        Modern, hızlı ve kullanıcı dostu web siteleri geliştirmek için kendimi geliştiriyorum.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Yetenekler</h2>
+
+    <div class="skills">
+      <div class="skill-card">HTML5</div>
+      <div class="skill-card">CSS3</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">Responsive Design</div>
+      <div class="skill-card">UI Design</div>
+      <div class="skill-card">Web Development</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Projeler</h2>
+
+    <div class="projects">
+      <div class="project-card">
+        <div class="project-content">
+          <h3>Portföy Sitesi</h3>
+          <p>Kendi kişisel portföy web sitemi geliştirdim.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-content">
+          <h3>Hava Durumu Uygulaması</h3>
+          <p>JavaScript kullanarak hava durumu uygulaması geliştirdim.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-content">
+          <h3>Responsive Web Tasarım</h3>
+          <p>Mobil uyumlu modern arayüz çalışmaları yaptım.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">İletişim</h2>
+
+    <div class="contact-box">
+      <div class="contact-item">
+        <strong>Ad Soyad:</strong> Barış Kurt
+      </div>
+
+      <div class="contact-item">
+        <strong>Konum:</strong> Zile / Tokat
+      </div>
+
+      <div class="contact-item">
+        <strong>Telefon:</strong> 0535 343 03 53
+      </div>
+
+      <div class="contact-item">
+        <strong>Email:</strong> kurtb1034@gmail.com
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Barış Kurt - Tüm Hakları Saklıdır.</p>
+  </footer>
+
+</body>
+</html>
